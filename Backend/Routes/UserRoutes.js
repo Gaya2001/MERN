@@ -13,6 +13,12 @@ router.get("/", UserController.getAllUsers);
 
 router.post("/", UserController.addUsers);
 
+router.get("/:id", UserController.getById);
+
+router.put("/:id", UserController.UpdateUser);
+
+router.delete("/:id", UserController.DeleteUser);
+
 // export
 
 module.exports = router;
